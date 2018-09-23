@@ -7,7 +7,7 @@ nav {
 	z-index: 999;
 /*    opacity: 0.99;*/
 	overflow: hidden;
-    background-image: linear-gradient(rgba(0,119,181, 0.97), rgba(59,89,152, 0.97));
+    background-image: linear-gradient(rgba(0,119,181, 0.95), rgba(59,89,152, 0.95));
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 /*background-color: rgba(255,255,255, 0.5)*/
@@ -57,7 +57,6 @@ img:hover {
 .navbar {
 	position: fixed;
 	width: 100%;
-	height: 60px;
 }
 
 .nav-item img {
@@ -160,10 +159,25 @@ img:hover {
 	#headingTitle {
 		display: none;
 	}
+    
+    .nav-link div {
+        display:block !important;
+    }
 
+    .navbar {
+        height: 60px;
+    }
 }
 
 @media only screen and (min-width: 700px) {
+    .navbar {
+        height: 45px;
+    }
+    
+    .nav-link div {
+        display:inline !important;
+    }
+    
 	.contactBox {
 		margin-left: auto;
 		margin-right: auto;
@@ -229,20 +243,6 @@ footer div ul li {
 footer div ul li a {
 	display: block;
 }
-
-/*.btn {*/
-/*    transform: scale(1);*/
-/*    transition: all .5s ease-in-out;*/
-/*    background-image: linear-gradient(#0077B5,  #3B5998);*/
-/*    border-color: #0077B5;*/
-/*    border-radius: 25px;*/
-/*}*/
-/**/
-/*.btn:hover {*/
-/*    transform: scale(1.1);*/
-/*    background-color: rgb(0, 119, 181);*/
-/*    color: #ebebf1;*/
-/*}*/
 
 .testimonialCarousel {
 	height:auto;
@@ -324,9 +324,20 @@ footer div ul li a {
     margin-bottom: auto;
     
     -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.7s;
     animation-name: slideIn;
     animation-duration: 0.7s
+}
+
+@media only screen and (max-width: 700px) {
+    .box_full {
+        width: 90%;
+        
+    }
+}
+
+.CarouselItem:hover {
+    transform: scale(1.05);
 }
 
 @-webkit-keyframes slideIn {
@@ -335,7 +346,7 @@ footer div ul li a {
 }
 
 @keyframes slideIn {
-    from {transform: scale(0.1); opacity: 0}
+    from {transform: scale(0.2); opacity: 0}
     to {transform: scale(1.0); opacity: 1}
 }
 
@@ -357,14 +368,23 @@ footer div ul li a {
     background-color: rgba(255, 255, 255, 0.5);
 
 }
+
  .CarouselItem p {
     height:75px;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
     overflow : hidden;
-    text-overflow: ellipsis;
+}
+
+.box_full p {
+    height:auto;
+}
+
+.showMore {
+    text-align:center;
+    display:block;
+}
+
+.box_full .showMore {
+    display: none;
 }
 
 .pswp__bg {
@@ -372,3 +392,36 @@ footer div ul li a {
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 }
+
+.closeBox {
+    text-align:center;
+    background-color:white;
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    position:fixed;
+    overflow:hidden;
+    top:20px;
+    right:20px;
+    float: right;
+    display:none;
+    background-image: none;
+    border:none;
+}
+.closeBox img {
+    width: 25px;
+}
+
+.closeBox:hover {
+    background-color: lightgray !important;
+}
+
+.closeBox:active, .closeBox:focus {
+    background-color: lightgray !important;
+}
+
+.closeBox:active:focus {
+    background-color: lightgray !important;
+    border-color: lightgray !important;
+}
+

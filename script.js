@@ -373,24 +373,68 @@ initPhotoSwipeFromDOM('.my-gallery');
                   
                   
     $( ".showMore" ).click(function() {
-                         
+                        
+        document.body.style.overflow = 'hidden';
+                           
         modalPopup = $(this).parent().clone();
                          
         modalPopup.appendTo($(".imageCarousel").parent());
         modalPopup.removeAttr("style");
                          
          modalPopup.addClass('box_full');
+                           
+        modalPopup.children('.closeBox').show();
+                           
                          
          shadowDiv = document.createElement( "div" )
          shadowDiv.className = "modal";
-        $(".imageCarousel").parent().append(shadowDiv)
-                    
-         $( ".modal" ).click(function() {
-            modalPopup.remove();
-            shadowDiv.remove();
-         });
+                           
+            $(".imageCarousel").parent().append(shadowDiv)
+                        
+             $( ".modal" ).click(function() {
+                 modalPopup.css( {transform:  "scale(0.1)",
+                                   transition: "all .7s ease-in-out"
+                } );
+                 
+                setTimeout(function(){
+                           modalPopup.remove();
+                           shadowDiv.remove();
+                           
+                           document.body.style.overflow = 'auto';
+                    }, 500);
+                                 
+             });
+                           
+           $( ".closeBox" ).click(function() {
+              modalPopup.css( {transform:  "scale(0.1)",
+                             transition: "all .7s ease-in-out"
+                    } );
+              
+              setTimeout(function(){
+                         modalPopup.remove();
+                         shadowDiv.remove();
+                         
+                         document.body.style.overflow = 'auto';
+                }, 500);
+          
+          });
     });
                 
-                  
+    $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 700, function(){
+                window.location.hash = hash;
+            });
+}
+    });
                
 });
