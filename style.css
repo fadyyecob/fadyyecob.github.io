@@ -1,0 +1,354 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	background-color: white;
+}
+
+nav {
+	z-index: 999;
+/*    opacity: 0.99;*/
+	overflow: hidden;
+    background-image: linear-gradient(rgba(0,119,181, 0.9), rgba(59,89,152, 0.9));
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+/*background-color: rgba(255,255,255, 0.5)*/
+    border-bottom:1px solid black;
+}
+
+.pswp {
+    z-index: 999999999999999999999999999999999;
+}
+
+.nav-item {
+	color: white;
+}
+
+.nav-item:hover {
+	color: #ebebf1;
+}
+
+.nav-item:hover:before {
+	color: #ebebf1;
+}
+
+nav a {
+	z-index: 999999999999999999999;
+}
+
+a {
+	color: #0077B5;
+}
+
+img {
+	transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+.CarouselItem img:hover {
+    transform: scale(1);
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+}
+
+.nav-item img {
+	width: 30px;
+}
+
+.header {
+	padding-top: 40px;
+}
+
+.btn {
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+	background-image: linear-gradient(#0077B5,  #3B5998);
+	border-color: #0077B5;
+	border-radius: 25px;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	background-color: rgb(0, 119, 181);
+	color: #ebebf1;
+}
+
+.btn:active {
+	transform: scale(0.9);
+	background-color: rgb(0, 119, 181);
+	color: #ebebf1;
+}
+
+.btn:disabled {
+    background-color: rgb(0, 119, 181);
+}
+
+.socialsBarButton:hover {
+	transform: scale(1);
+	border-color: #ebebf1;
+	box-shadow: none;
+}
+
+.socialsBarButton {
+	outline: 0;
+	box-shadow: none;
+	background-image: none;
+	border-color: transparent;
+}
+
+.socialsBar {
+    background-image:linear-gradient(#0077B5, #3B5998);
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-right:25px;
+    padding-left:25px;
+}
+
+.jumbotron {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#contactSection {
+	margin-top: 20px;
+	background-color: #ebebf1;
+}
+
+.header {
+	margin-bottom: 25px;
+}
+
+.header > .jumbotron {
+	align-items: center;
+	width: 700px;
+	
+	padding-top: 25px;
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 700px) {
+	.header .jumbotron {
+		width: 100%;
+	}
+	
+	.contactBox {
+		width: 100%;
+	}
+	#testimonialHeader {
+		margin-left: 20px;
+	}
+	
+	#profileImage {
+		width: 150px;
+		border-radius: 50%;
+	}
+	
+	#headingTitle {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 700px) {
+	.contactBox {
+		margin-left: auto;
+		margin-right: auto;
+		width:700px;
+	}
+	
+	#skillsText {
+		margin-left: auto;
+		margin-right: auto;
+		width:700px;
+	}
+	
+	#testimonialHeader {
+		text-align: center;
+	}
+	
+	#profileImage {
+		width: 200px;
+		border-radius: 50%;
+	}
+	
+	#headingTitleMobile {
+		display: none;
+	}
+}
+
+.header .jumbotron img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-header {
+	text-align: center;
+}
+
+.header .jumbotron p {
+	text-align: center;
+}
+
+html, body{
+	min-width:100%;
+}
+
+footer {
+	text-align:center;
+	background-image: linear-gradient(#0077B5,  #3B5998);
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+	color: white;
+	bottom: 0;
+}
+
+footer div ul {
+	display: table;
+	width: 100%;
+	list-style: none;
+}
+footer div ul li {
+	display: table-cell;
+	text-align: center;
+}
+footer div ul li a {
+	display: block;
+}
+
+/*.btn {*/
+/*    transform: scale(1);*/
+/*    transition: all .5s ease-in-out;*/
+/*    background-image: linear-gradient(#0077B5,  #3B5998);*/
+/*    border-color: #0077B5;*/
+/*    border-radius: 25px;*/
+/*}*/
+/**/
+/*.btn:hover {*/
+/*    transform: scale(1.1);*/
+/*    background-color: rgb(0, 119, 181);*/
+/*    color: #ebebf1;*/
+/*}*/
+
+.testimonialCarousel {
+	height:auto;
+	min-height: 1px;
+	display:block;
+}
+
+.CarouselItem {
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+	background-color: #ebebf1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ebebf1;
+	padding: 25px;
+	margin: 25px;
+	border-radius: 20px;
+}
+
+.CarouselItem:hover {
+    transform: scale(1.05);
+}
+
+.input-group-lg {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.active {
+	color: #ebebf1;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+.list-group-item {
+	display: table-cell;
+	background-color: red;
+	list-style-type: none;
+	display: block;
+	height:100%;
+}
+
+.testimonialsSection {
+	margin-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 0;
+	border-top:1px solid #ebebf1;
+}
+
+.skillImageBox > img {
+	padding: 5px;
+}
+
+.slick-active .slick-dot {
+    content:url(icons/dot-filled.png);
+}
+
+.pswp__top-bar {
+	background-image: linear-gradient(#0077B5, #3B5998);
+	opacity: 0.9;
+}
+
+.box_full {
+    height:auto;
+    width: 640px;
+    z-index:9999999999999999999999999999999999999999;
+    top: 50px;
+    left: 0;
+    overflow:auto;
+/*    background-color: rgb(0,0,0); /* Fallback color */*/
+/*    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */*/
+/*    transform: translate(-50%, -50%);*/
+/*    top:0;*/
+/*    left:0;*/
+/*    min-height: 10em;*/
+    bottom:50px;
+    right:0;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+/*    background-color: rgb(0,0,0); /* Fallback color */*/
+/*    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */*/
+    background: inherit;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    overflow: hidden;
+/*    animation-name: fadeIn;*/
+/*    animation-duration: 0.4s*/
+
+
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125642014-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'UA-125642014-1');
+        </script>
+        
+        <title>Fady Yecob - iOS Developer | Swift &#38; Objective-C</title>
+        <meta name="description" content="I'm a freelance iOS developer from the Netherlands. I'm able to build or update your iOS app using either Swift or Objective-C. The apps I build are of the highest quality with a pixel perfect user interface (UI) and great user experience (UX). "/>
+        <meta charset="UTF-8">
+        <meta name="author" content="Fady Yecob">
+        <meta name="keywords" content="iOS, Swift, Objective-C, Freelance, Freelancer">
+        <meta property="og:title" content="Fady Yecob - iOS Software Developer" />
+        <meta property="og:description" content="I'm an iOS developer from the Netherlands who is able to build iOS apps with great user interfaces and great user experience. " />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Fady Yecob - iOS developer" />
+        <meta property="og:url" content="https://www.fadyyecob.com" />
+        <meta property="og:image" content="https://fadyyecob.com/profile.png" />
+        <meta property="og:image:width" content="2528" />
+        <meta property="og:image:height" content="1324" />
+        <meta property="fb:app_id" content="482093915599069" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <link rel="canonical" href="https://www.fadyyecob.com" />
+        <link rel="icon" href="favicon.png" type="image/png" >
+        <!-- Bootstrap -->
+        <link href="bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <!-- Core CSS file -->
+        <link rel="stylesheet" href="photoswipe/photoswipe.css">
+        <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+        <script src="photoswipe/photoswipe.min.js"></script>
+        <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar nav-justified navbar-fixed-top">
+            <a class="nav-item nav-link" href="#">
+                <img src="icons/user.png" alt="Personal tab">
+                <div>Personal</div>
+            </a>
+            <a class="nav-item nav-link" href="#appsView">
+                <img src="icons/apps.png" alt="iOS apps I've built">
+                <div>Apps</div>
+            </a>
+            <a class="nav-item nav-link" href="#contactSection">
+                <img src="icons/mail.png" alt="Contact so I can developer or update your iOS app">
+                <div>Contact</div>
+            </a>
+        </nav>
+        
+        <div class="header" style="background-color:white;">
+            <div itemscope class="jumbotron">
+                <div class="page-header"><h1 id="headingTitle" itemprop="name">Fady Yecob - iOS Developer</h1><h1 id="headingTitleMobile" >Fady Yecob<br>iOS Developer</h1></div>
+                <img id="profileImage" src="profile.gif" alt="Fady Yecob - iOS software developer">
+                <p itemprop="description" class="speech-bubble" style="margin-top: 10px;">I&#39;m a software developer from the Netherlands. I currently focus on iOS development using either Swift or Objective-C. I'm able to turn your ideas into funtional iOS apps. Scroll down to read more about me and the stuff I&#39;ve worked on!</p>
+                <p><a class="btn btn-primary btn-lg" href="#contactSection" role="button">Hire me or get in touch!</a></p>
+            </div>
+            
+            <div class="socialsBar" style="background-image:linear-gradient(#0077B5, #3B5998);width:100%; display: flex; justify-content: space-between; padding-bottom:10px;padding-top:10px;padding-right:25px;padding-left:25px;">
+                <div><a class="socialsBarButton"  href="https://www.instagram.com/fadyyecob/" rel="external nofollow" target="_blank" role="button"><img style="height:30px;" src="icons/instagram.png" alt="My Instagram profile"></a></div>
+                <div><a class="socialsBarButton" href="https://www.linkedin.com/in/fady-yecob-88572688/" rel="external nofollow" target="_blank" role="button"><img style="height:30px;" src="icons/linkedin.png" alt="My LinkedIn profile containing my resume and work experience"></a></div>
+                <div><a class="socialsBarButton" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" rel="external nofollow" target="_blank" role="button"><img style="height:30px;" src="icons/upwork.png" alt="My Upwork profile containing my freelance experience and portfolio"></a></div>
+                <div><a class="socialsBarButton" href="https://twitter.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img style="height:30px;" src="icons/twitter.png" alt="My Twitter profile"></a></div>
+            </div>
+        </div>
+        
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            
+            <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+            
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+                
+                <!-- Container that holds slides.
+                 PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                 Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+                    
+                    <div class="pswp__top-bar">
+                        
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+                        
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!--    App view section    -->
+        <h2 id="appsView" style="text-align:center;" >Apps</h2>
+        <div id="portfolioCarousel" class="imageCarousel">
+            <div itemscope class="CarouselItem">
+                <h3 itemprop="app" style="text-align:center;">Magnifier</h3>
+                
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/Magnifier.png" itemprop="contentUrl" data-size="2732x2048">
+                            <img src="images/Magnifier.png" alt="A Magnifier iOS app developed by me" itemprop="thumbnail" style="width:100%;" />
+                        </a>
+                    </figure>
+                </div>
+                
+                <p itemprop="app-description" style="text-align:center;">This app was created for the visually impaired. The app allows the user to zoom into text, apply visual effects and toggle the flash in order to be able to read text. The app also supports OCR (Optical Character Recognition) which allows the user to use the camera to read text by showing boxes containing the words and reading it one by one. </p>
+                
+                <a class="showMore" style="text-align:center;display:block;">Show More ></a>
+            </div>
+            <div itemscope class="CarouselItem">
+                <h3 itemprop="app" style="text-align:center;">Magnifier Settings</h3>
+                
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/MagnifierSettings.png" itemprop="contentUrl" data-size="2732x2048">
+                            <img src="images/MagnifierSettings.png" alt="Magnifier settings developed by me" itemprop="thumbnail" style="width:100%;" />
+                        </a>
+                    </figure>
+                </div>
+                
+                <p itemprop="app-description" style="text-align:center;">This is the settings page to the magnifier app. The settings allow the user to change things like the voice of text to speech, the volume and the language.</p>
+            </div>
+            <div itemscope class="CarouselItem">
+                <h3 itemprop="app" style="text-align:center;">Bail Stories</h3>
+                
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/BailStories.png" itemprop="contentUrl" data-size="2732x2048">
+                            <img src="images/BailStories.png" alt="Bail Stories iOS information page developed by me" itemprop="thumbnail" style="width:100%;"/>
+                        </a>
+                    </figure>
+                </div>
+                
+                <p itemprop="app-description" style="text-align:center;">This is a simple about page created for an existing app. The about page links to the company's website and allows the user to send the company an email.</p>
+            </div>
+            <div itemscope class="CarouselItem">
+                <h3 itemprop="app" style="text-align:center;">DJ Censura</h3>
+                
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/DJCensura.png" itemprop="contentUrl" data-size="2732x2048">
+                            <img src="images/DJCensura.png" alt="DJ Censura iOS music app developed by me" itemprop="thumbnail" style="width:100%;" />
+                        </a>
+                    </figure>
+                </div>
+                <p itemprop="app-description" style="text-align:center;">This app was created for a DJ. The app allows the user to listen to DJ Censura's music and playlists. The app has an intuitive music player at the bottom of the screen. The app also allows user to mark music as their favorite. </p>
+            </div>
+            <div itemscope class="CarouselItem">
+                <h3 itemprop="app" style="text-align:center;">Effect Memos</h3>
+                <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="images/EffectMemos.png" itemprop="contentUrl" data-size="2732x2048">
+                            <img src="images/EffectMemos.png" alt="Effect memos iOS app developed by me" itemprop="thumbnail" style="width:100%;" />
+                        </a>
+                    </figure>
+                </div>
+                <p itemprop="app-description" style="text-align:center;">This is an app allows the user to record their voices and apply a fun effect to it. Some of the effects include: chipmunk, ogre and telephone.</p>
+            </div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; height:50px;">
+            <button id="carouselPrev" style="margin-left:25px;" type="button" class="btn btn-primary"><img alt="Previous" src="icons/left.png" style="width: 25px; "></button>
+            <button id="pause" type="button" class="btn btn-primary"><img alt="Pause or play" id="pausePlay" src="icons/pause.png" style="width: 25px; "></button>
+            <button id="carouselNext" style="margin-right:25px;" type="button" class="btn btn-primary"><img alt="Next" src="icons/right.png" style="width: 25px; "></button>
+        </div>
+        
+        <div itemscope style="background-color: #ebebf1;padding:20px;margin-top:20px;">
+            <h2 style="text-align:center;">Skills </h2>
+            
+            
+            <p itemprop="skills-description" id="skillsText" style="text-align:center;">These are some of the skills that I've acquired while working as a software developer. I have experience with the latest versions of Xcode (auto layout, debugging etc.), Swift and Objective-C. I have used several first party and third party libraries within iOS (using dependency managers CocoaPods and Carthage). I also have some web development experience using HTML, CSS, JavaScript and PHP. On both the web and app side I've worked with sql. I've worked with several frameworks within php such as Symfony and Laravel. Lastly I also have experience with C++ (using the Qt framework) and Java (with Android). </p>
+            
+            <div class="skillImageBox" style="text-align:center;">
+                <a href="https://developer.apple.com/xcode/" target="_blank" style="display:inline-block;text-align:center;"><img alt="Xcode" style="height:100px;" src="icons/xcode.png"><p>Xcode</p></a>
+                <a href="https://developer.apple.com/swift/" target="_blank" style="display:inline-block;text-align:center;"><img alt="Swift" style="height:100px;" src="icons/swift.png"><p>Swift</p></a>
+                <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" target="_blank" style="display:inline-block;text-align:center;"><img alt="Objective-C" style="height:100px;" src="icons/objc.png"><p>Objective-C</p></a>
+                <a href="https://cocoapods.org" target="_blank" style="display:inline-block;text-align:center;"><img alt="CocoaPods" style="height:100px;" src="icons/cocoapods.png"><p>CocoaPods</p></a>
+                <a href="https://github.com/Carthage/Carthage" target="_blank" style="display:inline-block;text-align:center;"><img alt="Carthage" style="height:100px;" src="icons/carthage.png"><p>Carthage</p></a>
+                <a href="https://www.w3.org/html/" target="_blank" style="display:inline-block;text-align:center;"><img alt="HTML5" style="height:100px;" src="icons/html.png"><p>HTML</p></a>
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" style="display:inline-block;text-align:center;"><img alt="CSS3" style="height:100px;" src="icons/css.png"><p>CSS</p></a>
+                <a href="https://developer.mozilla.org/bm/docs/Web/JavaScript" target="_blank" style="display:inline-block;text-align:center;"><img alt="JavaScript" style="height:100px;" src="icons/js.png"><p>JavaScript</p></a>
+                <a href="http://php.net" target="_blank" style="display:inline-block;text-align:center;"><img alt="PHP7" style="height:100px;" src="icons/php.png"><p>PHP</p></a>
+                <a href="https://www.mysql.com" target="_blank" style="display:inline-block;text-align:center;"><img alt="SQL, SQLite and MySQL" style="height:100px;" src="icons/sql.png"><p>SQL</p></a>
+                <a href="https://symfony.com" target="_blank" style="display:inline-block;text-align:center;"><img alt="Symfony" style="height:100px;" src="icons/symfony.png"><p>Symfony</p></a>
+                <a href="https://laravel.com" target="_blank" style="display:inline-block;text-align:center;"><img alt="My skills Laravel" style="height:100px;" src="icons/laravel.png"><p>Laravel</p></a>
+                <a href="https://git-scm.com" target="_blank" style="display:inline-block;text-align:center;"><img alt="Git (GitHub, Bitbucket and GitLab)"  style="height:100px;" src="icons/git.png"><p>Git</p></a>
+                <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" target="_blank" style="display:inline-block;text-align:center;"><img alt="Java and Android" style="height:100px;" src="icons/java.png"><p>Java/Android</p></a>
+                <a href="http://www.cplusplus.com" target="_blank" style="display:inline-block;text-align:center;"><img alt="C++ and Qt" style="height:100px;" src="icons/cpp.png"><p>C++</p></a>
+                
+            </div>
+            
+        </div>
+        
+        <div id="testimonialCarousel" class="testimonialsSection">
+            <a style="position:absolute;right:20px;" class="btn btn-primary" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" target="_blank" role="button">Read all</a>
+            <h2 id="testimonialHeader">Testimonials </h2>
+            <div class="testimonialCarousel">
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Fady was excellent! He demonstrated straight away that he understood the brief and what was required to achieve the objective. He worked quickly and efficiently and was able communicate what he was doing every step of the way..." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"I needed work completed very quickly in order to submit an app to the app store and Fady delivery the work within a few hours. A very nice implementation and he delivered quality code." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Fady was honest, quick and skillful. He didn't accept the job until he fully understood what was required of him. He's very polite and easy to work with. Oh, and the job was completed perfectly." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Fady provided us excellent service during his time upgrading our iOS app. His work was prompt and exactly as we wanted. He communicated at all times to ensure we were getting what we need.
+                    
+                    I have no hesitation in recommending Fady and we will certainly look to work with him again." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Fady did an excellent job and was really quick. Highly recommend." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Great work from Fady again. Very responsive to my requests, adheres to deadlines and goes above and beyond to make sure I receive what I'm asking for. Highly recommended worker." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Great worker. Great communication. Highly recommended. Had a good time working with him on my small task." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Fady completed the work much faster than anticipated, and everything works well. Highly recommended!" </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"Fady did a great job on time. Will hire him again in future work. Thanks." </p>
+                </div>
+                <div itemscope class="CarouselItem">
+                    <p itemprop="testimonial" style="text-align:center;">"I had a small request for a very basic prototype. Fady fulfilled my request within 24 hours. He he communication strong and very keen on the result. Pleasure working with him! Thank you." </p>
+                </div>
+            </div>
+        </div>
+            
+        <div style="display: flex; justify-content: space-between; height:50px;">
+            <button id="testimonialsPrev" style="margin-left:25px;" type="button" class="btn btn-primary"><img alt="Previous" src="icons/left.png" style="width: 25px; "></button>
+            <button id="testimonialsPause" type="button" class="btn btn-primary"><img alt="Pause or play" id="testimonialsPausePlay" src="icons/pause.png" style="width: 25px; "></button>
+            <button id="testimonialsNext" style="margin-right:25px;" type="button" class="btn btn-primary"><img alt="Next" src="icons/right.png" style="width: 25px; "></button>
+        </div>
+
+        <div id="contactSection" style="padding:20px;margin-bottom:0;">
+            <div class="contactBox">
+                <h2 style="text-align:center;">Contact</h2>
+                <p style="text-align:center;">Interested in working together or do want me to develop you an iOS app? Send me a message:</p>
+                
+                <div class="input-group input-group-lg">
+                    <span id="nameIcon" class="input-group-addon"><img alt="name" src="icons/user.png" style="width: 50px;margin-right:25px; "></span>
+                    <input id="nameForm" style="border-radius:25px;" type="text" class="form-control" placeholder="Name" aria-describedby="nameIcon">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span id="emailIcon" class="input-group-addon"><img alt="Email" src="icons/mail.png" style="width: 50px;margin-right:25px; "></span>
+                    <input id="emailForm" style="border-radius:25px;" type="text" class="form-control" placeholder="E-mail" aria-describedby="emailIcon">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span id="companyIcon" class="input-group-addon"><img alt="Company" src="icons/company.png" style="width: 50px;margin-right:25px; "></span>
+                    <input id="companyForm" style="border-radius:25px;" type="text" class="form-control" placeholder="Company (optional)" aria-describedby="companyIcon">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span id="questionIcon" class="input-group-addon"><img alt="Question" src="icons/question.png" style="width: 50px;margin-right:25px; "></span>
+                    <textarea id="textForm" style="border-radius:25px;height:100px;" class="form-control" placeholder="Question or comment" aria-describedby="questionIcon"></textarea>
+                </div>
+                
+                <div style="display: flex;align-items: center;justify-content: center;margin-right:0;margin-left:0;">
+                    <button id="sendMailButton" style="margin-left:auto; margin-right:auto; text-align:center;" type="button" class="btn btn-primary"> <img alt="Send" src="icons/send.png" style="width: 25px;margin-right:5px; ">Send</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script>
+            (function(){
+             emailjs.init("user_hiqM9X1vmjhr7QQkMVBP7");
+             })();
+            </script>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="slick-1.8.1/slick/slick.min.js"></script>
+        <script src="bootstrap-4/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="socialsBar" style="background-image:none;">
+                <div><a class="socialsBarButton"  href="https://www.instagram.com/fadyyecob/" rel="external nofollow" target="_blank" role="button"><img alt="My Instagram profile" style="height:30px;" src="icons/instagram.png"></a></div>
+                <div><a class="socialsBarButton" href="https://www.linkedin.com/in/fady-yecob-88572688/" rel="external nofollow" target="_blank" role="button"><img alt="My LinkedIn profile containing my resume and work history" style="height:30px;" src="icons/linkedin.png"></a></div>
+                <div><a class="socialsBarButton" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" rel="external nofollow" target="_blank" role="button"><img alt="My Upwork profile containing freelance experience" style="height:30px;" src="icons/upwork.png"></a></div>
+                <div><a class="socialsBarButton" href="https://twitter.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Twitter profile" style="height:30px;" src="icons/twitter.png"></a></div>
+            </div>
+            <div itemscope id="copyright"><p itemprop="copyright"> Copyright &copy; Fady Yecob All rights reserved. </p> </div>
+        </footer>
+
+    </body>
+</html>
