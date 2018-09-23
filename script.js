@@ -1,7 +1,6 @@
 $(document).ready(function(){
   var today = new Date();
   var year = today.getFullYear();
-
 				  
 	document.getElementById("copyright").innerHTML = "Copyright &copy; " + year + " Fady Yecob All rights reserved.";
 				  
@@ -69,43 +68,6 @@ $(document).ready(function(){
         }
 					
 	});
-                  
-//  $(window).scroll(function(){
-//       var imageCarousel = document.getElementById("portfolioCarousel");
-//       if (!isScrolledIntoView(imageCarousel)){
-//           pausePlay.src = 'icons/play.png';
-//           $('.imageCarousel').slick('slickPause');
-//           isPlaying = false;
-//       }
-//
-//       var testimonialCarousel = document.getElementById("testimonialCarousel");
-//
-//       if (!isScrolledIntoView(testimonialCarousel)){
-//           testimonialsPausePlay.src = 'icons/play.png';
-//           $('.testimonialCarousel').slick('slickPause');
-//           testimonialsIsPlaying = false;
-//       }
-//   });
-  
-  function isScrolledIntoView(el) {
-      var top = el.offsetTop;
-      var left = el.offsetLeft;
-      var width = el.offsetWidth;
-      var height = el.offsetHeight;
-      
-      while(el.offsetParent) {
-          el = el.offsetParent;
-          top += el.offsetTop;
-          left += el.offsetLeft;
-      }
-      
-      return (
-              top < (window.pageYOffset + window.innerHeight) &&
-              left < (window.pageXOffset + window.innerWidth) &&
-              (top + height) > window.pageYOffset &&
-              (left + width) > window.pageXOffset
-              );
-  }
 		
   $('.testimonialCarousel').slick({
       dots: true,
@@ -428,8 +390,7 @@ initPhotoSwipeFromDOM('.my-gallery');
             shadowDiv.remove();
          });
     });
-                  
-
+                
                   
                
 });
