@@ -372,6 +372,11 @@ footer div ul li a {
  .CarouselItem p {
     height:75px;
     overflow : hidden;
+    margin: 0;
+}
+
+.CarouselItem .notOnAppStore {
+    height:125px;
 }
 
 .box_full p {
@@ -425,3 +430,9 @@ footer div ul li a {
     border-color: lightgray !important;
 }
 
+.appStoreImage {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
