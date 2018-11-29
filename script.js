@@ -125,6 +125,7 @@ $(document).ready(function(){
     return '<span style="width:100%;height:100%;"> <img class="slick-dot" style="width:100%;height:100%;" src="icons/dot.png"></img></span>';
     },
 	 speed: 300,
+     lazyLoad: 'ondemand',
 	 slidesToShow: 3,
 	 slidesToScroll: 1,
 	 prevArrow: $('#carouselPrev'),
