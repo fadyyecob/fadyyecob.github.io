@@ -459,7 +459,25 @@ footer div ul li a {
     color:white;
 }
 
+.hireButton {
+    top: 100px;
+    x-transition: all 2s ease-in-out;
+    animation: downMove 2s infinite;
+}
 
+@keyframes downMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    50% {
+        transform: translate(0, 10px);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
 
 

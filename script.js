@@ -76,13 +76,13 @@ $(document).ready(function(){
             return '<span style="width:100%;height:100%;"> <img class="slick-dot" style="width:100%;height:100%;" src="icons/dot.png"></img></span>';
       },
 		infinite: true,
-		speed: 300,
+		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: $('#testimonialsPrev'),
 		nextArrow: $('#testimonialsNext'),
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 3500,
 		adaptiveHeight:true,
 		responsive: [
 					 {
@@ -124,14 +124,14 @@ $(document).ready(function(){
     // this example would render "tabs" with titles
     return '<span style="width:100%;height:100%;"> <img class="slick-dot" style="width:100%;height:100%;" src="icons/dot.png"></img></span>';
     },
-	 speed: 300,
+	 speed: 500,
      lazyLoad: 'ondemand',
 	 slidesToShow: 3,
 	 slidesToScroll: 1,
 	 prevArrow: $('#carouselPrev'),
 	 nextArrow: $('#carouselNext'),
 	 autoplay: true,
-	 autoplaySpeed: 3000,
+	 autoplaySpeed: 3500,
 	 adaptiveHeight:true,
 	 responsive: [
 		  {
