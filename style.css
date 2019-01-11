@@ -135,7 +135,8 @@ img:hover {
 
 #contactSection {
 	margin-top: 20px;
-	background-color: #ebebf1;
+    background-color: #323232;
+    color:white;
 }
 
 .header {
@@ -310,7 +311,7 @@ footer div ul li a {
 	margin-bottom: 0;
 	padding-top: 20px;
 	padding-bottom: 0;
-	border-top:1px solid #ebebf1;
+/*    border-top:1px solid #ebebf1;*/
     color: white;
 }
 
@@ -461,34 +462,34 @@ footer div ul li a {
     color:white;
 }
 
-#sendMailButton {
-    background-color: #66bbff;
-    color:white;
-}
+/*#sendMailButton {*/
+/*    background-color: #66bbff;*/
+/*    color:white;*/
+/*}*/
 
-#carouselNext {
-    background-color: #66bbff;
-}
-
-#carouselPrev {
-    background-color: #66bbff;
-}
-
-#pause {
-    background-color: #66bbff;
-}
-
-#testimonialsPrev {
-    background-color: #66bbff;
-}
-
-#testimonialsPause {
-    background-color: #66bbff;
-}
-
-#testimonialsNext {
-    background-color: #66bbff;
-}
+/*#carouselNext {*/
+/*    background-color: #66bbff;*/
+/*}*/
+/**/
+/*#carouselPrev {*/
+/*    background-color: #66bbff;*/
+/*}*/
+/**/
+/*#pause {*/
+/*    background-color: #66bbff;*/
+/*}*/
+/**/
+/*#testimonialsPrev {*/
+/*    background-color: #66bbff;*/
+/*}*/
+/**/
+/*#testimonialsPause {*/
+/*    background-color: #66bbff;*/
+/*}*/
+/**/
+/*#testimonialsNext {*/
+/*    background-color: #66bbff;*/
+/*}*/
 
 
 
