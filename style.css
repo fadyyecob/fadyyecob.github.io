@@ -1,17 +1,28 @@
 body {
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	background-color: white;
+	background-color: black;
 }
 
-nav {
-	z-index: 999;
-/*    opacity: 0.99;*/
-	overflow: hidden;
-    background-image: linear-gradient(rgba(0,119,181, 0.95), rgba(59,89,152, 0.95));
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
-/*background-color: rgba(255,255,255, 0.5)*/
-    border-bottom:1px solid black;
+@media not -webkit-device-pixel-ratio {
+    nav {
+        z-index: 999;
+    /*    opacity: 0.99;*/
+        overflow: hidden;
+    /*    background-image:linear-gradient(#323232, #323232);*/
+        background-color: rgba(50, 50, 50, 0.95);
+        border-bottom:1px solid black;
+    }
+}
+
+@supports (-webkit-backdrop-filter: blur(25px)) {
+    nav {
+        z-index: 999;
+        overflow: hidden;
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        background-color: rgba(50, 50, 50, 0.5);
+        border-bottom:1px solid black;
+    }
 }
 
 .pswp {
@@ -35,7 +46,7 @@ nav a {
 }
 
 a {
-	color: #0077B5;
+	color: #66bbff;
 }
 
 img {
@@ -70,8 +81,10 @@ img:hover {
 .btn {
     transform: scale(1);
     transition: all .5s ease-in-out;
-	background-image: linear-gradient(#0077B5,  #3B5998);
-	border-color: #0077B5;
+    color:#66bbff;
+    background-color: rgba(0,0,0,0);
+/*    background-image: linear-gradient(#66bbff,  #66bbff);*/
+    border-color: #66bbff;
 	border-radius: 25px;
 }
 
@@ -105,7 +118,7 @@ img:hover {
 }
 
 .socialsBar {
-    background-image:linear-gradient(#0077B5, #3B5998);
+    background-image:linear-gradient(#323232, #323232);
     width:100%;
     display: flex;
     justify-content: space-between;
@@ -224,7 +237,7 @@ html, body{
 
 footer {
 	text-align:center;
-	background-image: linear-gradient(#0077B5,  #3B5998);
+	background-image: linear-gradient(#323232,  #323232);
 	border-top: 1px solid #ccc;
 	padding-top: 5px;
 	color: white;
@@ -250,13 +263,18 @@ footer div ul li a {
 	display:block;
 }
 
+.imageCarousel {
+    color:white;
+}
+
 .CarouselItem {
+    color:white;
     transform: scale(1);
     transition: all .5s ease-in-out;
-	background-color: #ebebf1;
+	background-color: #323232;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #ebebf1;
+	border-color: #323232;
 	padding: 25px;
 	margin: 25px;
 	border-radius: 20px;
@@ -276,7 +294,8 @@ footer div ul li a {
 }
 
 .jumbotron {
-	background-color: white;
+	background-color: black;
+    color:white;
 }
 
 .list-group-item {
@@ -292,6 +311,7 @@ footer div ul li a {
 	padding-top: 20px;
 	padding-bottom: 0;
 	border-top:1px solid #ebebf1;
+    color: white;
 }
 
 .skillImageBox > img {
@@ -436,3 +456,43 @@ footer div ul li a {
     margin-left: auto;
     margin-right: auto;
 }
+
+#appsView {
+    color:white;
+}
+
+#sendMailButton {
+    background-color: #66bbff;
+    color:white;
+}
+
+#carouselNext {
+    background-color: #66bbff;
+}
+
+#carouselPrev {
+    background-color: #66bbff;
+}
+
+#pause {
+    background-color: #66bbff;
+}
+
+#testimonialsPrev {
+    background-color: #66bbff;
+}
+
+#testimonialsPause {
+    background-color: #66bbff;
+}
+
+#testimonialsNext {
+    background-color: #66bbff;
+}
+
+
+
+
+
+
+
