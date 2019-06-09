@@ -62,7 +62,7 @@
         <div class="header">
             <div itemscope class="jumbotron profileCard">
                 
-<!--                <a href="" id="lightModeButton" style="position:absolute;right:20px;color:white;" role="button">Light mode</a>-->
+<!--                <a id="lightModeButton" style="position:absolute;right:20px;color:white;" role="button">Light mode</a>-->
 
                 <div class="page-header"><h1 id="headingTitle" itemprop="name">Fady Yecob - iOS Developer</h1><h1 id="headingTitleMobile" >Fady Yecob<br>iOS Developer</h1></div>
                 <img id="profileImage" src="profile.gif" alt="Fady Yecob - iOS software developer">
@@ -72,12 +72,12 @@
         </div>
         
         <div class="socialsBar">
-            <div><a class="socialsBarButton"  href="https://www.instagram.com/fadyyecob/" rel="external nofollow" target="_blank" role="button"><img alt="My Instagram profile" style="height:30px;" src="icons/instagram.png"></a></div>
-            <div><a class="socialsBarButton" href="https://www.linkedin.com/in/fady-yecob-88572688/" rel="external nofollow" target="_blank" role="button"><img alt="My LinkedIn profile containing my resume and work history" style="height:30px;" src="icons/linkedin.png"></a></div>
-            <div><a class="socialsBarButton" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" rel="external nofollow" target="_blank" role="button"><img alt="My Upwork profile containing freelance experience" style="height:30px;" src="icons/upwork.png"></a></div>
-            <div><a class="socialsBarButton" href="https://twitter.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Twitter profile" style="height:30px;" src="icons/twitter.png"></a></div>
-            <div><a class="socialsBarButton" href="https://github.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Github" style="height:30px;" src="icons/github.png"></a></div>
-            <div><a class="socialsBarButton" href="Resume.pdf" rel="external nofollow" target="_blank" role="button"><img alt="My Resume" style="height:30px;" src="icons/cv.png"></a></div>
+            <div><a class="socialsBarButton icon"  href="https://www.instagram.com/fadyyecob/" rel="external nofollow" target="_blank" role="button"><img alt="My Instagram profile" style="height:30px;" src="icons/instagram.png"></a></div>
+            <div><a class="socialsBarButton icon" href="https://www.linkedin.com/in/fady-yecob-88572688/" rel="external nofollow" target="_blank" role="button"><img alt="My LinkedIn profile containing my resume and work history" style="height:30px;" src="icons/linkedin.png"></a></div>
+            <div><a class="socialsBarButton icon" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" rel="external nofollow" target="_blank" role="button"><img alt="My Upwork profile containing freelance experience" style="height:30px;" src="icons/upwork.png"></a></div>
+            <div><a class="socialsBarButton icon" href="https://twitter.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Twitter profile" style="height:30px;" src="icons/twitter.png"></a></div>
+            <div><a class="socialsBarButton icon" href="https://github.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Github" style="height:30px;" src="icons/github.png"></a></div>
+            <div><a class="socialsBarButton icon" href="Resume.pdf" rel="external nofollow" target="_blank" role="button"><img alt="My Resume" style="height:30px;" src="icons/cv.png"></a></div>
         </div>
         
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -199,7 +199,7 @@
                 
                 <p itemprop="app-description" style="text-align:center;">This is a simple about page created for an existing app. The about page links to the company's website and allows the user to send the company an email.</p>
                 
-                <a class="showMore" >Read More ></a>
+                <a class="showMore">Read More ></a>
                 
                 <a href="https://itunes.apple.com/us/app/bail-stories/id1411544148?mt=8&ign-mpt=uo%3D4" target="_blank"><img class="appStoreImage" alt="App Store" src="icons/AppStore.svg"></a>
             </div>
@@ -215,7 +215,7 @@
                 </div>
                 <p class="notOnAppStore" itemprop="app-description" style="text-align:center;">This app allows the user to record their voices and apply a fun effect to it. Some of the effects include: chipmunk, ogre and telephone. The user is then able to save their recordings and listen to them at a later date. </p>
                 
-                <a class="showMore" >Read More ></a>
+                <a class="showMore">Read More ></a>
             </div>
             <div itemscope class="CarouselItem">
                 <button class="btn btn-primary closeBox" ><img alt="Close" src="icons/close.png"></button>
@@ -239,9 +239,8 @@
             <button id="carouselNext" style="margin-right:25px;" type="button" class="btn btn-primary"><img alt="Next" src="icons/right.png" style="width: 25px; "></button>
         </div>
         
-        <div itemscope style="background-color: #323232;padding:20px;margin-top:20px;color:white;">
+        <div itemscope class="skillsSection">
             <h2 style="text-align:center;">Skills </h2>
-            
             
             <p itemprop="skills-description" id="skillsText" style="text-align:center;">These are some of the skills that I've acquired while working as a software developer. I have experience with the latest versions of Xcode (auto layout, debugging etc.), Swift and Objective-C. I have used several first party and third party libraries within iOS (using dependency managers CocoaPods and Carthage). I also have some web development experience using HTML, CSS, JavaScript and PHP. On both the web and app side I've worked with sql. I've worked with several frameworks within php such as Symfony and Laravel. Lastly I also have experience with C++ (using the Qt framework) and Java (with Android). </p>
             
@@ -337,19 +336,19 @@
                 <p style="text-align:center;">Interested in working together or do want me to develop you an iOS app? Send me a message:</p>
                 
                 <div class="input-group input-group-lg">
-                    <span id="nameIcon" class="input-group-addon"><img alt="name" src="icons/user.png" style="width: 50px;margin-right:25px; "></span>
+                    <span id="nameIcon" class="input-group-addon icon"><img alt="name" src="icons/user.png" style="width: 50px;margin-right:25px; "></span>
                     <input id="nameForm" style="border-radius:25px;" type="text" class="form-control" placeholder="Name" aria-describedby="nameIcon">
                 </div>
                 <div class="input-group input-group-lg">
-                    <span id="emailIcon" class="input-group-addon"><img alt="Email" src="icons/mail.png" style="width: 50px;margin-right:25px; "></span>
+                    <span id="emailIcon" class="input-group-addon icon"><img alt="Email" src="icons/mail.png" style="width: 50px;margin-right:25px; "></span>
                     <input id="emailForm" style="border-radius:25px;" type="text" class="form-control" placeholder="E-mail" aria-describedby="emailIcon">
                 </div>
                 <div class="input-group input-group-lg">
-                    <span id="companyIcon" class="input-group-addon"><img alt="Company" src="icons/company.png" style="width: 50px;margin-right:25px; "></span>
+                    <span id="companyIcon" class="input-group-addon icon"><img alt="Company" src="icons/company.png" style="width: 50px;margin-right:25px; "></span>
                     <input id="companyForm" style="border-radius:25px;" type="text" class="form-control" placeholder="Company (optional)" aria-describedby="companyIcon">
                 </div>
                 <div class="input-group input-group-lg">
-                    <span id="questionIcon" class="input-group-addon"><img alt="Question" src="icons/question.png" style="width: 50px;margin-right:25px; "></span>
+                    <span id="questionIcon" class="input-group-addon icon"><img alt="Question" src="icons/question.png" style="width: 50px;margin-right:25px; "></span>
                     <textarea id="textForm" style="border-radius:25px;height:100px;" class="form-control" placeholder="Question or comment" aria-describedby="questionIcon"></textarea>
                 </div>
                 
@@ -373,12 +372,12 @@
 
         <footer>
             <div class="socialsBar" style="background-image:none;">
-                <div><a class="socialsBarButton"  href="https://www.instagram.com/fadyyecob/" rel="external nofollow" target="_blank" role="button"><img alt="My Instagram profile" style="height:30px;" src="icons/instagram.png"></a></div>
-                <div><a class="socialsBarButton" href="https://www.linkedin.com/in/fady-yecob-88572688/" rel="external nofollow" target="_blank" role="button"><img alt="My LinkedIn profile containing my resume and work history" style="height:30px;" src="icons/linkedin.png"></a></div>
-                <div><a class="socialsBarButton" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" rel="external nofollow" target="_blank" role="button"><img alt="My Upwork profile containing freelance experience" style="height:30px;" src="icons/upwork.png"></a></div>
-                <div><a class="socialsBarButton" href="https://twitter.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Twitter profile" style="height:30px;" src="icons/twitter.png"></a></div>
-                <div><a class="socialsBarButton" href="https://github.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Github" style="height:30px;" src="icons/github.png"></a></div>
-                <div><a class="socialsBarButton" href="Resume.pdf" rel="external nofollow" target="_blank" role="button"><img alt="My Resume" style="height:30px;" src="icons/cv.png"></a></div>
+                <div><a class="socialsBarButton icon"  href="https://www.instagram.com/fadyyecob/" rel="external nofollow" target="_blank" role="button"><img alt="My Instagram profile" style="height:30px;" src="icons/instagram.png"></a></div>
+                <div><a class="socialsBarButton icon" href="https://www.linkedin.com/in/fady-yecob-88572688/" rel="external nofollow" target="_blank" role="button"><img alt="My LinkedIn profile containing my resume and work history" style="height:30px;" src="icons/linkedin.png"></a></div>
+                <div><a class="socialsBarButton icon" href="https://www.upwork.com/o/profiles/users/~013984f43006ee3e7b/" rel="external nofollow" target="_blank" role="button"><img alt="My Upwork profile containing freelance experience" style="height:30px;" src="icons/upwork.png"></a></div>
+                <div><a class="socialsBarButton icon" href="https://twitter.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Twitter profile" style="height:30px;" src="icons/twitter.png"></a></div>
+                <div><a class="socialsBarButton icon" href="https://github.com/fadyyecob" rel="external nofollow" target="_blank" role="button"><img alt="My Github" style="height:30px;" src="icons/github.png"></a></div>
+                <div><a class="socialsBarButton icon" href="Resume.pdf" rel="external nofollow" target="_blank" role="button"><img alt="My Resume" style="height:30px;" src="icons/cv.png"></a></div>
             </div>
             <div itemscope id="copyright"><p itemprop="copyright"> Copyright &copy; Fady Yecob All rights reserved. </p> </div>
         </footer>

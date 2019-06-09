@@ -22,7 +22,7 @@ body {
         z-index: 999;
         overflow: hidden;
         background-color: var(--primaryColorPartlyTransparent);
-        border-bottom:1px solid var(--backgroundColor);
+        border-bottom:1px solid var(--primaryColor);
     }
 }
 
@@ -33,7 +33,7 @@ body {
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
         background-color: var(--primaryColorTransparent);
-        border-bottom:1px solid var(--backgroundColor);
+        border-bottom:1px solid var(--primaryColor);
     }
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-item {
-	color: var(--foregroundColor);
+	color: white;
 }
 
 .nav-item:hover {
@@ -147,6 +147,13 @@ img:hover {
 #contactSection {
 	margin-top: 20px;
     background-color: var(--primaryColor);
+    color: var(--foregroundColor);
+}
+
+.skillsSection {
+    background-color: var(--primaryColor);
+    padding: 20px;
+    margin-top: 20px;
     color: var(--foregroundColor);
 }
 

@@ -38,18 +38,19 @@ $(document).ready(function(){
 	});
                   
   $( "#lightModeButton" ).click(function() {
-//    document.documentElement.style.setProperty('--primaryColorTransparent', "");
-//    document.documentElement.style.setProperty('--primaryColorPartlyTransparent', "");
-//    document.documentElement.style.setProperty('--highlightColor', "");
-//
-//    document.documentElement.style.setProperty('--tintColor', "");
-//    document.documentElement.style.setProperty('--highlightTintColor', "");
-//
-//    document.documentElement.style.setProperty('--primaryColor', "");
-//    document.documentElement.style.setProperty('--backgroundColorTransparent', "");
+    document.documentElement.style.setProperty('--primaryColor', "rgb(242, 242, 242)");
+    document.documentElement.style.setProperty('--primaryColorTransparent', "rgba(50, 50, 50, 0.8)");
+//    document.documentElement.style.setProperty('--primaryColorPartlyTransparent', "rgba(242, 242, 242, 0.95)");
+
+//    document.documentElement.style.setProperty('--tintColor', "rgb(0, 122, 255)");
+//    document.documentElement.style.setProperty('--highlightTintColor', "rgb(0, 122, 255)");
+//    document.documentElement.style.setProperty('--highlightColor', "rgb(0, 122, 255)");
                                 
+    document.documentElement.style.setProperty('--backgroundColorTransparent', "rgba(255, 255, 255, 0.5)");
     document.documentElement.style.setProperty('--backgroundColor', 'white');
     document.documentElement.style.setProperty('--foregroundColor', 'black');
+                                
+    $(".icon").css("filter", "invert(100%)");
                                
   });
 				  
