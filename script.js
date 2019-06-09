@@ -36,7 +36,22 @@ $(document).ready(function(){
 			   window.alert("Couldn't send the form, try again later.");
 			});
 	});
-				  
+                  
+  $( "#lightModeButton" ).click(function() {
+//    document.documentElement.style.setProperty('--primaryColorTransparent', "");
+//    document.documentElement.style.setProperty('--primaryColorPartlyTransparent', "");
+//    document.documentElement.style.setProperty('--highlightColor', "");
+//
+//    document.documentElement.style.setProperty('--tintColor', "");
+//    document.documentElement.style.setProperty('--highlightTintColor', "");
+//
+//    document.documentElement.style.setProperty('--primaryColor', "");
+//    document.documentElement.style.setProperty('--backgroundColorTransparent', "");
+                                
+    document.documentElement.style.setProperty('--backgroundColor', 'white');
+    document.documentElement.style.setProperty('--foregroundColor', 'black');
+                               
+  });
 				  
 	var isPlaying = true;
 	var pausePlay = document.getElementById("pausePlay");

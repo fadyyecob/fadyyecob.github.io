@@ -1,30 +1,28 @@
 :root {
-    --darkGrayTransparent: rgba(50, 50, 50, 0.5);
-    --darkGray: rgba(50, 50, 50, 0.95);
-    --lightGray: rgb(235, 235, 241);
+    --primaryColor: rgb(50, 50, 50);
+    --primaryColorTransparent: rgba(50, 50, 50, 0.5);
+    --primaryColorPartlyTransparent: rgba(50, 50, 50, 0.95);
     
-    --lightBlue: rgb(102, 187, 255);
-    --darkBlue: rgb(0, 119, 181);
+    --highlightColor: rgb(235, 235, 241);
+    --tintColor: rgb(102, 187, 255);
+    --highlightTintColor: rgb(0, 119, 181);
     
-    --dark: rgb(50, 50, 50);
-    --transparentWhite: rgba(0, 0, 0, 0.5);
-    --gray: rgb(204, 204, 204);
-    
-    --black: black;
-    --white: white;
+    --backgroundColorTransparent: rgba(0, 0, 0, 0.5);
+    --backgroundColor: black;
+    --foregroundColor: white;
 }
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	background-color: var(--black);
+	background-color: var(--backgroundColor);
 }
 
 @media not -webkit-device-pixel-ratio {
     nav {
         z-index: 999;
         overflow: hidden;
-        background-color: var(--darkGray);
-        border-bottom:1px solid var(--black);
+        background-color: var(--primaryColorPartlyTransparent);
+        border-bottom:1px solid var(--backgroundColor);
     }
 }
 
@@ -34,8 +32,8 @@ body {
         overflow: hidden;
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
-        background-color: var(--darkGrayTransparent);
-        border-bottom:1px solid var(--black);
+        background-color: var(--primaryColorTransparent);
+        border-bottom:1px solid var(--backgroundColor);
     }
 }
 
@@ -44,15 +42,15 @@ body {
 }
 
 .nav-item {
-	color: var(--white);
+	color: var(--foregroundColor);
 }
 
 .nav-item:hover {
-	color: var(--lightGray);
+	color: var(--highlightColor);
 }
 
 .nav-item:hover:before {
-	color: var(--lightGray);
+	color: var(--highlightColor);
 }
 
 nav a {
@@ -60,7 +58,7 @@ nav a {
 }
 
 a {
-	color: var(--lightBlue);
+	color: var(--tintColor);
 }
 
 img {
@@ -95,31 +93,31 @@ img:hover {
 .btn {
     transform: scale(1);
     transition: all .5s ease-in-out;
-    color: var(--lightBlue);
+    color: var(--tintColor);
     background-color: transparent;
-    border-color: var(--lightBlue);
+    border-color: var(--tintColor);
 	border-radius: 25px;
 }
 
 .btn:hover {
 	transform: scale(1.1);
-	background-color: var(--darkBlue);
-	color: var(--lightGray);
+	background-color: var(--highlightTintColor);
+	color: var(--highlightColor);
 }
 
 .btn:active {
 	transform: scale(0.9);
-	background-color: var(--darkBlue);
-	color: var(--lightGray);
+	background-color: var(--highlightTintColor);
+	color: var(--highlightColor);
 }
 
 .btn:disabled {
-    background-color: var(--darkBlue);
+    background-color: var(--highlightTintColor);
 }
 
 .socialsBarButton:hover {
 	transform: scale(1);
-	border-color: var(--lightGray);
+	border-color: var(--highlightColor);
 	box-shadow: none;
 }
 
@@ -131,7 +129,7 @@ img:hover {
 }
 
 .socialsBar {
-    background-image: linear-gradient(var(--dark), var(--dark));
+    background-image: linear-gradient(var(--primaryColor), var(--primaryColor));
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -148,8 +146,8 @@ img:hover {
 
 #contactSection {
 	margin-top: 20px;
-    background-color: var(--dark);
-    color: var(--white);
+    background-color: var(--primaryColor);
+    color: var(--foregroundColor);
 }
 
 .header {
@@ -251,10 +249,10 @@ html, body{
 
 footer {
 	text-align:center;
-	background-image: linear-gradient(var(--dark),  var(--dark));
+	background-image: linear-gradient(var(--primaryColor),  var(--primaryColor));
 	border-top: 1px solid #ccc;
 	padding-top: 5px;
-	color: var(--white);
+	color: var(--foregroundColor);
 	bottom: 0;
 }
 
@@ -278,17 +276,17 @@ footer div ul li a {
 }
 
 .imageCarousel {
-    color: var(--white);
+    color: var(--foregroundColor);
 }
 
 .CarouselItem {
-    color: var(--white);
+    color: var(--foregroundColor);
     transform: scale(1);
     transition: all .5s ease-in-out;
-	background-color: var(--dark);
+	background-color: var(--primaryColor);
 	border-style: solid;
 	border-width: 1px;
-	border-color: var(--dark);
+	border-color: var(--primaryColor);
 	padding: 25px;
 	margin: 25px;
 	border-radius: 20px;
@@ -304,12 +302,12 @@ footer div ul li a {
 }
 
 .active {
-	color: var(--lightGray);
+	color: var(--highlightColor);
 }
 
 .jumbotron {
-	background-color: var(--black);
-    color: var(--white);
+	background-color: var(--backgroundColor);
+    color: var(--foregroundColor);
 }
 
 .list-group-item {
@@ -324,7 +322,7 @@ footer div ul li a {
 	margin-bottom: 0;
 	padding-top: 20px;
 	padding-bottom: 0;
-    color: var(--white);
+    color: var(--foregroundColor);
 }
 
 .skillImageBox > img {
@@ -336,7 +334,7 @@ footer div ul li a {
 }
 
 .pswp__top-bar {
-    background-image:linear-gradient(var(--dark), var(--dark));
+    background-image:linear-gradient(var(--primaryColor), var(--primaryColor));
 	opacity: 0.9;
 }
 
@@ -398,7 +396,7 @@ footer div ul li a {
     overflow: hidden;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
-    background-color: var(--transparentWhite);
+    background-color: var(--backgroundColorTransparent);
 
 }
 
@@ -426,14 +424,14 @@ footer div ul li a {
 }
 
 .pswp__bg {
-    background: var(--transparentWhite)!important;
+    background: var(--backgroundColorTransparent)!important;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 }
 
 .closeBox {
     text-align: center;
-    background-color: var(--white);
+    background-color: var(--foregroundColor);
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -471,7 +469,7 @@ footer div ul li a {
 }
 
 #appsView {
-    color: var(--white);
+    color: var(--foregroundColor);
 }
 
 .hireButton {
