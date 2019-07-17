@@ -146,7 +146,7 @@ $(document).ready(function(){
 	 slidesToScroll: 1,
 	 prevArrow: $('#carouselPrev'),
 	 nextArrow: $('#carouselNext'),
-	 autoplay: true,
+	 autoplay: false,
 	 autoplaySpeed: 3500,
 	 adaptiveHeight:true,
 	 responsive: [
